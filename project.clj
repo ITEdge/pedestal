@@ -1,4 +1,5 @@
 ; Copyright 2013 Relevance, Inc.
+; Copyright 2014 Cognitect, Inc.
 
 ; The use and distribution terms for this software are covered by the
 ; Eclipse Public License 1.0 (http://opensource.org/licenses/eclipse-1.0)
@@ -9,14 +10,11 @@
 ;
 ; You must not remove this notice, or any other, from this software.
 
-(defproject io.pedestal/pedestal "0.2.2-SNAPSHOT"
+(defproject io.pedestal/pedestal "0.3.0-SNAPSHOT"
   :plugins [[lein-sub "0.2.3"]]
   :sub ["service"
         "jetty"
         "tomcat"
         "service-tools"
-        "service-template"
-        "app"
-        "app-tools"
-        "app-template"])
+        "service-template"])
 

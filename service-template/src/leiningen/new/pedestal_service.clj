@@ -1,4 +1,5 @@
 ; Copyright 2013 Relevance, Inc.
+; Copyright 2014 Cognitect, Inc.
 
 ; The use and distribution terms for this software are covered by the
 ; Eclipse Public License 1.0 (http://opensource.org/licenses/eclipse-1.0)
@@ -31,4 +32,5 @@
              ["src/{{sanitized}}/service.clj" (render "service.clj" data)]
              ["test/{{sanitized}}/service_test.clj" (render "service_test.clj" data)]
              ["config/logback.xml" (render "logback.xml" data)]
-             ["config/user.clj" (render "user.clj" data)])))
+             ["dev/user.clj" (render "user.clj" data)]
+             ["dev/dev.clj" (render "dev.clj" data)])))

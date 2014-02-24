@@ -1,7 +1,7 @@
 # Pedestal [![Build Status](https://travis-ci.org/pedestal/pedestal.png)](https://travis-ci.org/pedestal/pedestal)
 
-Pedestal is a web application framework written in Clojure that aims to bring
-both the language and its principles (Simplicity, Power and Focus) to client and
+Pedestal is a set of libraries written in Clojure that aims to bring
+both the language and its principles (Simplicity, Power and Focus) to
 server-side development.
 
 ## Getting started
@@ -9,13 +9,10 @@ server-side development.
 ### Starting a new project
 
 Use [leiningen](https://github.com/technomancy/leiningen) (2.2.0+) to create a new
-Pedestal application or service. This will automatically pull templates from
+Pedestal service. This will automatically pull templates from
 <http://clojars.org>
 
 ```bash
-# To create a new client-side application:
-lein new pedestal-app the-next-big-thing
-
 # To create a new service:
 lein new pedestal-service the-next-big-server-side-thing
 ```
@@ -32,11 +29,9 @@ applications and improving general ease of use.
 
 ### Documentation
 
-* [Pedestal documentation](http://pedestal.io/documentation/): overview of
-  Pedestal concepts and advice on getting started.
-* API Docs: generate literate-programming-style API docs by following the
-  "What about API Documentation?" instructions in the
-  [Pedestal Overview](http://pedestal.io/documentation/).
+ * [Pedestal documentation](./guides) is coupled within this repository.
+ * API Docs: generate literate-programming-style API docs by following the
+  instructions within the [guides](./guides/documentation/index.md#what-about-api-documentation).
 
 ### Supported Platforms
 
@@ -51,10 +46,14 @@ diagnosing or correcting Windows issues.
 
 ### Find out more
 
-* Visit [our website](http://pedestal.io/)
 * Follow [@pedestal_team on Twitter](http://twitter.com/pedestal_team)
 * Subscribe to [pedestal-users](https://groups.google.com/d/forum/pedestal-users)
   and [pedestal-dev](https://groups.google.com/d/forum/pedestal-dev)
+
+### Looking for Pedestal App?
+
+ * Pedestal App now lives in [its own github repo](https://github.com/pedestal/pedestal-app).
+ * Please see the [community announcement](https://groups.google.com/forum/#!topic/pedestal-users/jODwmJUIUcg) for more details.
 
 ## Contributing
 
@@ -69,6 +68,8 @@ To install Pedestal library components in your local Maven repository run
 
 ## License
 Copyright 2013 Relevance, Inc.
+
+Copyright 2014 Cognitect, Inc.
 
 The use and distribution terms for this software are covered by the
 Eclipse Public License 1.0 (http://opensource.org/licenses/eclipse-1.0)

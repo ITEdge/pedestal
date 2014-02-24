@@ -1,4 +1,5 @@
 ; Copyright 2013 Relevance, Inc.
+; Copyright 2014 Cognitect, Inc.
 
 ; The use and distribution terms for this software are covered by the
 ; Eclipse Public License 1.0 (http://opensource.org/licenses/eclipse-1.0)
@@ -9,7 +10,7 @@
 ;
 ; You must not remove this notice, or any other, from this software.
 
-(defproject pedestal-service/lein-template "0.2.2-SNAPSHOT"
+(defproject pedestal-service/lein-template "0.3.0-SNAPSHOT"
   :description "A Pedestal Service template."
   :min-lein-version "2.0.0"
   :eval-in-leiningen true

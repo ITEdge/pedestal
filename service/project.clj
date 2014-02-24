@@ -1,4 +1,5 @@
 ; Copyright 2013 Relevance, Inc.
+; Copyright 2014 Cognitect, Inc.
 
 ; The use and distribution terms for this software are covered by the
 ; Eclipse Public License 1.0 (http://opensource.org/licenses/eclipse-1.0)
@@ -9,7 +10,7 @@
 ;
 ; You must not remove this notice, or any other, from this software.
 
-(defproject io.pedestal/pedestal.service "0.2.2-SNAPSHOT"
+(defproject io.pedestal/pedestal.service "0.3.0-SNAPSHOT"
   :description "Pedestal Service"
   :dependencies [[org.clojure/clojure "1.5.1"]
                  ;; logging
@@ -26,7 +27,7 @@
   :java-source-paths ["java"]
   :javac-options ["-target" "1.5" "-source" "1.5"]
   :global-vars {*warn-on-reflection* true}
-  :aliases {"bench-log" ["trampoline" "run" "-m" "io.pedestal.service.log-bench"]
+  :aliases {"bench-log" ["trampoline" "run" "-m" "io.pedestal.log-bench"]
             "dumbrepl" ["trampoline" "run" "-m" "clojure.main/main"]}
   :profiles {:default [:dev :provided :user :base]
              :provided
@@ -37,7 +38,7 @@
                              [org.clojure/java.classpath "0.2.0"]
                              [org.clojure/tools.namespace "0.2.2"]
                              [clj-http "0.6.4"]
-                             [io.pedestal/pedestal.jetty "0.2.2-SNAPSHOT"]
+                             [io.pedestal/pedestal.jetty "0.3.0-SNAPSHOT"]
                              [javax.servlet/javax.servlet-api "3.0.1"]
                              ;; Logging:
                              [ch.qos.logback/logback-classic "1.0.13" :exclusions [org.slf4j/slf4j-api]]
